@@ -1,0 +1,156 @@
+[
+  {
+    "ID": "c:main.c@8@macro@RCC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_BASE",
+    "location": {
+      "column": "9",
+      "line": "1",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "RCC_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@37@macro@RCC_AHB1ENR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RCC_AHB1ENR",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "RCC_AHB1ENR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@98@macro@GPIOA_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_BASE",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "GPIOA_BASE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@129@macro@GPIOA_MODER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_MODER",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "GPIOA_MODER",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@190@macro@GPIOA_ODR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIOA_ODR",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "GPIOA_ODR",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "5",
+      "line": "9",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@holdspace",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "holdspace",
+    "location": {
+      "column": "5",
+      "line": "11",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "holdspace",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@holdletter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "holdletter",
+    "location": {
+      "column": "5",
+      "line": "12",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "holdletter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@holdend",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "holdend",
+    "location": {
+      "column": "5",
+      "line": "13",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "holdend",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "15",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@799@F@main@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "16",
+      "line": "33",
+      "path": "C:\\Users\\evlevlmonkee\\Documents\\embedd100\\Assignment3\\main.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  }
+]
