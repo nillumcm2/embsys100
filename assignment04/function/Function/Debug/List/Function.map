@@ -1,0 +1,194 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  18/Nov/2019  15:38:27
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Exe\Function.out
+#    Map file     =
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\List\Function.map
+#    Command line =
+#        -f C:\Users\EVLEVL~1\AppData\Local\Temp\EWEFE9.tmp
+#        (C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Obj\Add.o
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Obj\main.o
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Obj\TestAdd.o
+#        --no_out_extension -o
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Exe\Function.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\List\Function.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\CONFIG\generic_cortex.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x7'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block PROC_STACK with size = 0, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block PROC_STACK, block HEAP };
+
+  Section          Kind         Address   Size  Object
+  -------          ----         -------   ----  ------
+"A0":                                     0x40
+  .intvec          ro code          0x0   0x40  vector_table_M.o [3]
+                                 - 0x40   0x40
+
+"P1":                                    0x10c
+  .text            ro code         0x40   0x3a  zero_init3.o [3]
+  .text            ro code         0x7a    0x2  vector_table_M.o [3]
+  .text            ro code         0x7c   0x28  data_init.o [3]
+  .text            ro code         0xa4   0x24  Add.o [1]
+  .iar.init_table  const           0xc8   0x10  - Linker created -
+  .text            ro code         0xd8   0x1e  cmain.o [3]
+  .text            ro code         0xf6    0x4  low_level_init.o [2]
+  .text            ro code         0xfa    0x8  main.o [1]
+  .text            ro code        0x102    0x4  exit.o [2]
+  .text            ro code        0x106   0x18  TestAdd.o [1]
+  .text            ro code        0x120    0xa  cexit.o [3]
+  .text            ro code        0x12c   0x14  exit.o [4]
+  .text            ro code        0x140    0xc  cstartup_M.o [3]
+  .rodata          const          0x14c    0x0  zero_init3.o [3]
+                                - 0x14c  0x10c
+
+"P2", part 1 of 2:                         0x4
+  .bss             zero     0x2000'0000    0x4  Add.o [1]
+                          - 0x2000'0004    0x4
+
+"P2", part 2 of 2:                       0x400
+  CSTACK                    0x2000'0008  0x400  <Block>
+    CSTACK         uninit   0x2000'0008  0x400  <Block tail>
+                          - 0x2000'0408  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x14c     0x7'ffff  0x7'feb4
+  0x2000'0004  0x2000'0007       0x4
+  0x2000'0408  0x2000'ffff    0xfbf8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x4:
+          0x2000'0000   0x4
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Obj: [1]
+    Add.o                  36                 4
+    TestAdd.o              24
+    main.o                  8
+    -------------------------------------------
+    Total:                 68                 4
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+rt7M_tl.a: [3]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    data_init.o            40
+    vector_table_M.o       66
+    zero_init3.o           58
+    -------------------------------------------
+    Total:                216
+
+shb_l.a: [4]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created                  16    1'024
+-----------------------------------------------
+    Grand Total:          316       16    1'028
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base          0xc8         --   Gb  - Linker created -
+.iar.init_table$$Limit         0xd8         --   Gb  - Linker created -
+?main                          0xd9        Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0408         --   Gb  - Linker created -
+Region$$Table$$Base            0xc8         --   Gb  - Linker created -
+Region$$Table$$Limit           0xd8         --   Gb  - Linker created -
+__cmain                        0xd9        Code  Gb  cmain.o [3]
+__exit                        0x12d  0x14  Code  Gb  exit.o [4]
+__iar_data_init3               0x7d  0x28  Code  Gb  data_init.o [3]
+__iar_program_start           0x141        Code  Gb  cstartup_M.o [3]
+__iar_zero_init3               0x41  0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init               0xf7   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0        Data  Gb  vector_table_M.o [3]
+_call_main                     0xe5        Code  Gb  cmain.o [3]
+_exit                         0x121        Code  Gb  cexit.o [3]
+_main                          0xf3        Code  Gb  cmain.o [3]
+add_Init                       0xa5   0x8  Code  Gb  Add.o [1]
+callAdd                        0xad  0x16  Code  Gb  Add.o [1]
+exit                          0x103   0x4  Code  Gb  exit.o [2]
+holdvalue               0x2000'0000   0x4  Data  Gb  Add.o [1]
+main                           0xfb   0x8  Code  Gb  main.o [1]
+test_Init                     0x107  0x18  Code  Gb  TestAdd.o [1]
+
+
+[1] = C:\Users\evlevlmonkee\Documents\embedd100\Assignment4\Function\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+    316 bytes of readonly  code memory
+     16 bytes of readonly  data memory
+  1'028 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
