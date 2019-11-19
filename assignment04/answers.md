@@ -20,4 +20,4 @@ b. Before the function is two of the registers are pushed onto the stack.
 
 c. During the function call it uses to the program counter to be able to access the values that were not kept stored in the registers and then combines the values into register R0;
 
-d. It seems as though the register are constantly being pushed onto and popped off of the stack, when it does not have enough registers to store all of the values being used,
+d. It seems as though the register are constantly being pushed onto and popped off of the stack, when it does not have enough registers to store all of the values being used.
