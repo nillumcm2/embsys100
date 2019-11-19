@@ -25,7 +25,7 @@ c.
 
 0800’068: 0x6015 STR R5, [R2]
 
-The registers are being directly changed with the values in the R2 and R0;
+The registers are being directly changed with the values in the R2 and R0.
 
 2.
 a. The values are passed by be stored into registers R0, R1, R2, and R3, but it then stores the values of R0 into the SP, and then uses R0 for a different value.
